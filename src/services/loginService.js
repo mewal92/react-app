@@ -1,6 +1,6 @@
 
 const login = async ({ email, password }) => {
-    return fetch('http://localhost:8082/users/login', { // Make sure the URL matches your backend endpoint
+    return fetch('http://localhost:8082/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

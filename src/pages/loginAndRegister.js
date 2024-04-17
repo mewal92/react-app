@@ -48,10 +48,9 @@ const Modal = ({ id, title, children, onClose, show }) => {
 
 
   const handleRegister = async (event) => {
-  event.preventDefault(); // Prevent the form from submitting the traditional way
+  event.preventDefault(); 
 
   try {
-    // Register the user with Firebase Auth
     const userCredential = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
     const user = userCredential.user;
 
@@ -59,8 +58,8 @@ const Modal = ({ id, title, children, onClose, show }) => {
 
     const userData = {
         uid: user.uid,
-        email: user.email, // Since Firebase Auth handles emails, ensure you're passing it if needed
-        name: registerName, // Assuming you're collecting this in your registration form
+        email: user.email, 
+        name: registerName, 
       };
     
       console.log('Sending additional user details to backend:', userData);
@@ -75,7 +74,7 @@ const Modal = ({ id, title, children, onClose, show }) => {
     toast.success("Registration completed!");
     closeRegisterModal();
     showLoginModal();
-    // Further actions like redirecting the user or clearing the form
+ 
   } catch (error) {
     console.error('Registration failed:', error.message);
     toast.error(`Registration failed: ${error.message}`);

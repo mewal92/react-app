@@ -69,7 +69,6 @@ text-align: center;
  
 }
 
-/* Extra styles for the cancel button */
 .cancelbtn {
   color: #fff;
   width: auto;
@@ -92,7 +91,7 @@ text-align: center;
   border: none;
 }
 
-/* Center the image and position the close button */
+
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
@@ -108,7 +107,7 @@ img.avatar {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center everything horizontally */
+  align-items: center; 
 }
 
 .bottom-container {
@@ -134,7 +133,7 @@ img.avatar {
   font-weight: bold;
 }
 
-/* The Modal (background) */
+
 input[type=text], input[type=password] {
   width: 85%;
   padding: 12px 20px;
@@ -145,32 +144,32 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* The Modal (background) */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: fit-content; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: fit-content; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
   padding-top: 30px;
   
 }
 
-/* Modal Content/Box */
+
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
   border: 1px solid #888;
   border-radius: 10px;
-  width: 48%; /* Could be more or less, depending on screen size */
+  width: 48%; 
 }
 
-/* The Close Button (x) */
+
 .close {
   position: absolute;
   right: 55px;
@@ -185,8 +184,8 @@ input[type=text], input[type=password] {
   color: red;
   cursor: pointer;
 }
-/*
-/* Add Zoom Animation */
+
+
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
@@ -209,7 +208,6 @@ input[type=text], input[type=password] {
 }
 
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
      display: block;
