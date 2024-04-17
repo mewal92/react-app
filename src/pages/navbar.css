@@ -1,0 +1,68 @@
+
+body {
+  background: rgb(59,57,79);
+  background: linear-gradient(90deg, rgba(59,57,79,1) 0%, rgba(86,86,122,1) 42%, rgba(90,104,107,1) 100%);
+  /*
+  background-image: url("../images/bild9.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; */
+}
+ 
+ /* Example CSS for the custom navbar */
+.navbar {
+  background-color: rgb(53, 53, 53);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 100%;
+    position:fixed;
+    z-index: 1;
+    top:0;
+right:0;
+  }
+
+  .container, .navbar-content {
+    padding: 0px;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+  
+  }
+  
+  .navbar-nav.right {
+    justify-content: right;
+    margin-right: 0; 
+    padding-right: 0;
+  }
+
+  .nav-link {
+    color: #e4e4e4;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 5rem; /* Space between links */
+    margin-left: 3rem;
+  }
+
+  .signedin {
+    color: #a0a0a0;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-right: 2rem; /* Space between links */
+    margin-left: 1rem;
+  }
+ 
+  
+  .nav-link:hover {
+    color: #eeeeee;
+  }
+
+  
+
