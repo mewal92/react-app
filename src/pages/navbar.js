@@ -4,6 +4,8 @@ import './navbar.css';
 import { useAuth } from '../services/auth.js'; 
 import { signOut } from 'firebase/auth';
 import { auth } from '../services/firebase-config.js';
+import { getAllBookings } from '../services/bookingService.js';
+import Profile from '../pages/profile.js';
 
 const handleSignOut = async () => {
     try {
@@ -25,8 +27,8 @@ function Navbar() {
 <div className="container">
   <div className="navbar-content">
     <div className="navbar-nav me-auto">
-      <Link className="nav-link" to="/bookings">EVENTS</Link>
-      <Link className="nav-link" to="/profile">PROFILE</Link>
+      <Link className="nav-link" to= { getAllBookings }>EVENTS</Link>
+      <Link className="nav-link" to={Profile}>PROFILE</Link>
       
     </div>
     <div className="navbar-nav right">
