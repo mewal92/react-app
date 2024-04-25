@@ -2,7 +2,7 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8082, http://localhost:8081, http://localhost:8080",
+  "proxy": "https://bookingapi-cke324lauq-lm.a.run.app, https://userapi-cke324lauq-lm.a.run.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
