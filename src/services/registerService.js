@@ -12,7 +12,7 @@ const registerUserWithFirebaseAndBackend = async (email, password, additionalUse
       ...additionalUserData 
     };
 
-    const response = await fetch('http://localhost:8082/users/register', {
+    const response = await fetch(process.env.REACT_APP_BOOKING_API_URL + '/users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

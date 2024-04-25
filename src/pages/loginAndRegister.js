@@ -63,7 +63,7 @@ const Modal = ({ id, title, children, onClose, show }) => {
       };
     
       console.log('Sending additional user details to backend:', userData);
-    await fetch('http://localhost:8082/users/register', {
+    await fetch(process.env.REACT_APP_BOOKING_API_URL + '/users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

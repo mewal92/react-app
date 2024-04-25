@@ -3,7 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const handleBookEvent = async (id, userId, startDate, endDate) => {
     try {
-      const response = await fetch('http://localhost:8081/bookings/book-event', {
+      const response = await fetch(process.env.REACT_APP_BOOKING_API_URL + '/bookings/book-event', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
