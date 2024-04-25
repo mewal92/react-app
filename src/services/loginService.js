@@ -1,6 +1,6 @@
 
 const login = async ({ email, password }) => {
-    return fetch(process.env.REACT_APP_USER_API_URL + '/users/login', {
+    return fetch('https://userapi-cke324lauq-lm.a.run.app/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
