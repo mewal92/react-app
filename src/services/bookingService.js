@@ -18,7 +18,7 @@ export const getAllBookings = async () => {
 
 export const getUserBookings = async (userId) => {
   try {
-    console.log("user id in bookingservice: " + userId);
+    console.log("testing user id in bookingservice: " + userId);
     const response = await fetch(`https://bookingapi-cke324lauq-lm.a.run.app/bookings/users/${userId}`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
