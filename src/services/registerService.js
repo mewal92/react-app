@@ -20,9 +20,9 @@ const registerUserWithFirebaseAndBackend = async (email, password, additionalUse
       body: JSON.stringify(userData),
     });
 
-    if (!response.ok) throw new Error('Failed to register additional user details.');
+    if (!response.ok) throw new Error('Failed to register user details.');
 
-    console.log('User registered with Firebase and additional details stored in backend.');
+    console.log('User registered with Firebase details stored in backend.');
   
   } catch (error) {
     console.error('Registration error:', error);
