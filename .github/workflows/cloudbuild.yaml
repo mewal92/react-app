@@ -13,6 +13,7 @@ env:
   IMAGE: europe-central2-docker.pkg.dev/interns-melinda/cloud-run-source-deploy/my-app3
   REGION: europe-central2
   SERVICE_NAME: react-app
+  PORT: 3000
 
 
 jobs:
@@ -55,6 +56,6 @@ jobs:
 
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy ${{ env.SERVICE_NAME }} \--image ${{ env.IMAGE }}:latest \--region ${{ env.REGION }} \--platform managed \--allow-unauthenticated
+          gcloud run deploy ${{ env.SERVICE_NAME }} \--image ${{ env.IMAGE }}:latest \--region ${{ env.REGION }} \--platform managed \--allow-unauthenticated \--port ${{ env.PORT }}
 
 
