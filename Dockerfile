@@ -9,4 +9,4 @@ COPY . .
 RUN yarn build
 EXPOSE 3000
 ENV PORT 3000
-CMD ["npx", "serve", "-s", "build", "npm", "start", "node", "server.js"]
+CMD ["npx", "serve", "-s", "build", "npm", "start"]
