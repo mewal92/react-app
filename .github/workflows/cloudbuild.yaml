@@ -41,7 +41,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ env.IMAGE }}:latest
-      - run: docker build --platform linux/amd64 -t ${{ env.IMAGE }}:latest
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
@@ -57,6 +56,7 @@ jobs:
 
       - name: Deploy to Google Cloud Run
         run: |
+          docker build \--platform linux/amd64 \-t my-app3 \
           gcloud run deploy ${{ env.SERVICE_NAME }} \--image ${{ env.IMAGE }}:latest \--region ${{ env.REGION }} \--platform managed \--allow-unauthenticated 
 
 
