@@ -56,7 +56,6 @@ jobs:
 
       - name: Deploy to Google Cloud Run
         run: |
-          docker build \--platform linux/amd64 \-t my-app3 \
           gcloud run deploy ${{ env.SERVICE_NAME }} \--image ${{ env.IMAGE }}:latest \--region ${{ env.REGION }} \--platform managed \--allow-unauthenticated 
 
 

@@ -4,7 +4,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN yarn install --frozen-lockfile
 RUN yarn install
-RUN npm install
 COPY . .
 RUN yarn build
 CMD ["npx", "serve", "-s", "build", "npm", "start"]
