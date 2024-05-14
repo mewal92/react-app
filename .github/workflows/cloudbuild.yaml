@@ -41,6 +41,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ env.IMAGE }}:latest
+          no-cache: true
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2

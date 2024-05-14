@@ -6,4 +6,4 @@ RUN yarn install --frozen-lockfile
 RUN yarn install
 COPY . .
 RUN yarn build
-CMD ["npx", "serve", "-s", "build", "npm", "start"]
+CMD ["npx", "serve", "-s", "build"]
