@@ -41,6 +41,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ env.IMAGE }}:latest
+      - run: docker build --platform linux/amd64 -t ${{ env.IMAGE }}:latest
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
