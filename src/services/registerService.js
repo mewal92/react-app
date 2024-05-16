@@ -12,7 +12,7 @@ const registerUserWithFirebaseAndBackend = async (email, password, additionalUse
       ...additionalUserData 
     };
 
-    const response = await fetch('https://userapi-cke324lauq-lm.a.run.app/users/register', {
+    const response = await fetch('userapi-cke324lauq-lm.a.run.app/users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
