@@ -1,6 +1,6 @@
 
 const login = async ({ email, password }) => {
-    return fetch('userapi-cke324lauq-lm.a.run.app/users/login', {
+    return fetch('users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
