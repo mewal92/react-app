@@ -49,10 +49,11 @@ const BookingsPage = () => {
     if (selectedBooking) {
       const id = selectedBooking.id;
       const userId = currentUser.uid;
+      const userEmail = currentUser.email;
       const formattedStartDate = startDate ? startDate.toISOString() : undefined;
       const formattedEndDate = endDate ? endDate.toISOString() : undefined;
 
-      await handleBookEvent(id, userId, formattedStartDate, formattedEndDate);
+      await handleBookEvent(id, userId, userEmail, formattedStartDate, formattedEndDate);
       setIsModalOpen(false);
       navigate('/profile');
     }
