@@ -1,9 +1,9 @@
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const handleBookEvent = async (id, userId, userEmail, startDate, endDate) => {
+const handleBookEvent = async (id, userId, email, startDate, endDate) => {
     try {
-      const response = await fetch('https://bookingapi-cke324lauq-lm.a.run.app/bookings/book-event', {
+      const response = await fetch('https://34.0.250.26:82/bookings/book-event', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ const handleBookEvent = async (id, userId, userEmail, startDate, endDate) => {
         body: JSON.stringify({
           id, 
           userId,
-          userEmail,
+          email,
           startDate, 
           endDate, 
         }),
