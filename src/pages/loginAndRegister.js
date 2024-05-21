@@ -63,7 +63,7 @@ const Modal = ({ id, title, children, onClose, show }) => {
       };
     
       console.log('Sending additional user details to backend:', userData);
-    await fetch('https://34.0.243.73:81/users/register', {
+    await fetch('http://34.0.246.28/users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
