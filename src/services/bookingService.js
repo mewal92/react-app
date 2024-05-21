@@ -3,7 +3,7 @@ import { useAuth } from '../services/auth.js';
 
 export const getAllBookings = async () => {
   try {
-    const response = await fetch('https://bookingapi.europe-central2.run.internal/bookings/all');
+    const response = await fetch('https://bookingapi-cke324lauq-lm.a.run.app/bookings/all');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -19,7 +19,7 @@ export const getAllBookings = async () => {
 export const getUserBookings = async (userId) => {
   try {
     console.log("testing user id in bookingservice: " + userId);
-    const response = await fetch(`https://bookingapi.europe-central2.run.internal/bookings/users/${userId}`);
+    const response = await fetch(`https://bookingapi-cke324lauq-lm.a.run.app/bookings/users/${userId}`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -33,7 +33,7 @@ export const getUserBookings = async (userId) => {
 
 export const handleCancelBooking = async (id, onSuccess) => {
   try {
-      const response = await fetch(`https://bookingapi.europe-central2.run.internal/bookings/cancel/${id}`, {
+      const response = await fetch(`https://bookingapi-cke324lauq-lm.a.run.app/bookings/cancel/${id}`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
