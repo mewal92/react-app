@@ -3,7 +3,7 @@ import { useAuth } from '../services/auth.js';
 
 export const getAllBookings = async () => {
   try {
-    const response = await fetch('https://34.0.250.26:82/bookings/all');
+    const response = await fetch('https://34.0.246.28/bookings/all');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -19,7 +19,7 @@ export const getAllBookings = async () => {
 export const getUserBookings = async (userId) => {
   try {
     console.log("testing user id in bookingservice: " + userId);
-    const response = await fetch(`https://34.0.250.26:82/bookings/users/${userId}`);
+    const response = await fetch(`https://34.0.246.28/bookings/users/${userId}`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -33,7 +33,7 @@ export const getUserBookings = async (userId) => {
 
 export const handleCancelBooking = async (id, onSuccess) => {
   try {
-      const response = await fetch(`https://34.0.250.26:82/bookings/cancel/${id}`, {
+      const response = await fetch(`https://34.0.246.28/bookings/cancel/${id}`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',

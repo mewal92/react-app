@@ -12,7 +12,7 @@ const registerUserWithFirebaseAndBackend = async (email, password, additionalUse
       ...additionalUserData 
     };
 
-    const response = await fetch('https://34.0.243.73:81/users/register', {
+    const response = await fetch('https://34.0.246.28/users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
