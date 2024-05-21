@@ -12,7 +12,7 @@ const registerUserWithFirebaseAndBackend = async (email, password, additionalUse
       ...additionalUserData 
     };
 
-    const response = await fetch('http://34.0.246.28/users/register', {
+    const response = await fetch('https://userapi.europe-central2.run.internal/users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
