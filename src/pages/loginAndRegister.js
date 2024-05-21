@@ -63,7 +63,7 @@ const Modal = ({ id, title, children, onClose, show }) => {
       };
     
       console.log('Sending additional user details to backend:', userData);
-    await fetch('https://userapi-cke324lauq-lm.a.run.app/users/register', {
+    await fetch('http://10.186.0.8//users/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
